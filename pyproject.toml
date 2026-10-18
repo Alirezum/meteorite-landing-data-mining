@@ -1,0 +1,29 @@
+[project]
+name = "meteorite-landing-data-mining"
+version = "0.1.0"
+description = "Exploratory analysis and visualisation of NASA meteorite landing records"
+readme = "README.md"
+authors = [
+    { name = "Alirezu", email = "alirezueffati@protonmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "matplotlib>=3.9",
+    "numpy>=2.0",
+    "pandas>=2.2",
+]
+
+[project.scripts]
+meteorite-landing-data-mining = "meteorite_landing_data_mining.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
+
+# PyPI's file CDN (files.pythonhosted.org) is unreachable on this network, so
+# the Aliyun mirror is used as the default index. Remove this block if your
+# network can reach PyPI directly, then re-run `uv lock`.
+[[tool.uv.index]]
+name = "aliyun"
+url = "https://mirrors.aliyun.com/pypi/simple/"
+default = true
