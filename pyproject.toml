@@ -3,6 +3,8 @@ name = "meteorite-landing-data-mining"
 version = "0.1.0"
 description = "Exploratory analysis and visualisation of NASA meteorite landing records"
 readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
 authors = [
     { name = "Alirezu", email = "alirezueffati@protonmail.com" }
 ]
